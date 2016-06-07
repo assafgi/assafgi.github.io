@@ -25,7 +25,6 @@ form{
 input[type="text"] { 
 	color: black; 
 	background: white;
-	text-align:right;
 	height: 40px;
 	font-size: 40px;
 	font-family: Ariel;
