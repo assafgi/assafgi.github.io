@@ -59,6 +59,11 @@ input[type="submit"] {
 
 	body{
     background: url(mobile.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+	margin:0;
+	padding:0;
+	direction: rtl;
 }
 
 h1{
