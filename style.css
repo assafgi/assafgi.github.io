@@ -56,8 +56,10 @@ input[type="submit"] {
 	margin-left: 20px;
 	width: 135px;
 }
+@media only screen and (max-width: 500px) {
 
-@media only screen and (max-device-width: 480px) {
+
+
 	body{
     background: url(lovush.jpg);
     background-size: 100%;
@@ -116,4 +118,5 @@ input[type="submit"] {
 	margin-left: 2px;
 	width: 13px;
 }
+
 }
