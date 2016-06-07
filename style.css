@@ -64,7 +64,6 @@ h1{
 form{
 	color: white;
 	font-size: 60px; /*affacts the label and not affects the input*/
-	line-height: 40px;
 	padding:0;
 	text-align:center;
 }
