@@ -56,7 +56,7 @@ input[type="submit"] {
 	margin-left: 20px;
 	width: 135px;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
 
 	body{
     background: url(mobile.JPG);
