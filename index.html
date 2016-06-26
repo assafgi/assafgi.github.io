@@ -3,6 +3,8 @@
 <meta charset="UTF-8">
 
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
 <link rel="stylesheet" type="text/css" href="style.css">
 
 <h1>אישור הגעה לחתונה של נועה ואסף</h1>
@@ -14,23 +16,35 @@
 
 <p>      
 <label><b>שם מלא</b></label><br>
-<input type="text" 	size="10"></p>
+<input type="text" id="name" name="input1" size="10"></p>
 
 <p>      
 <label><b>כמה תגיעו?</b></label><br>
-<input type="text" 	size="10"></p>
+<input type="text" name="input2" size="10"></p>
 
 <p>      
-<input type="submit" value="מגיע"><input type="submit" value="לא מגיע"></p>
-
+<input type="submit" id="come" value="מגיע"><input type="submit" value="לא מגיע"></p>
 </form>
 
-<?php
-echo "<h2>PHP is Fun!</h2>";
-echo "Hello world!<br>";
-echo "I'm about to learn PHP!<br>";
-echo "This ", "string ", "was ", "made ", "with multiple parameters.";
-?>
+
+<script>
+
+$(document).ready(function(){
+    $("come").click(function(){
+         $.ajax({
+  type: 'POST',
+  url: "lala.txt",
+  data: document.getElementById("name").value, //your data
+  //success: success, //callback when ajax request finishes
+  dataType: "text" //text/json...
+});
+    });
+
+
+});
+
+</script>
+
 
 
 
